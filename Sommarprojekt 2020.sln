@@ -6,14 +6,19 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentationlayer", "Presentationlayer.csproj", "{7760E51B-940B-4638-B562-B1C097DD2FBC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F0582813-52B2-47FD-AB2F-55069F615E5A} = {F0582813-52B2-47FD-AB2F-55069F615E5A}
+		{175A7FCC-715A-4E7A-84E9-33688EA434CF} = {175A7FCC-715A-4E7A-84E9-33688EA434CF}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Businesslayer", "..\Businesslayer\Businesslayer.csproj", "{F0582813-52B2-47FD-AB2F-55069F615E5A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D78C9B2D-7D82-4223-A242-19ECE5AA99DA} = {D78C9B2D-7D82-4223-A242-19ECE5AA99DA}
+		{175A7FCC-715A-4E7A-84E9-33688EA434CF} = {175A7FCC-715A-4E7A-84E9-33688EA434CF}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datalayer", "..\Datalayer\Datalayer.csproj", "{D78C9B2D-7D82-4223-A242-19ECE5AA99DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{175A7FCC-715A-4E7A-84E9-33688EA434CF} = {175A7FCC-715A-4E7A-84E9-33688EA434CF}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessEntities", "..\BusinessEntities\BusinessEntities.csproj", "{175A7FCC-715A-4E7A-84E9-33688EA434CF}"
 EndProject
