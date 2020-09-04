@@ -3,11 +3,31 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpfTool="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
         xmlns:local="clr-namespace:Sommarprojekt_2020"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="496" Width="800">
     <Grid>
-        <Calendar  HorizontalAlignment="Left" Margin="102,98,0,0" VerticalAlignment="Top" Height="197" Width="238" RenderTransformOrigin="0.5,0.472"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="377*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Calendar 
+            HorizontalAlignment="Left" Margin="95,123,0,0" VerticalAlignment="Top" Height="197" Width="238" RenderTransformOrigin="0.5,0.472" FirstDayOfWeek="Monday" >
+            <Calendar.BindingGroup>
+                <BindingGroup/>
+            </Calendar.BindingGroup>
+
+        </Calendar>
+        <Button Content="Logga ut" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="Tvättid7" HorizontalAlignment="Left" Height="48" Margin="418,107,0,0" TextWrapping="Wrap" 
+                 Text="7:00 - 10:30" VerticalAlignment="Top" Width="101" FontSize="14" TextAlignment="Center"/>
+        <TextBox x:Name="Tvättid11" HorizontalAlignment="Left" Height="48" Margin="418,174,0,0" TextWrapping="Wrap" 
+                 Text="11:00 - 14:30" VerticalAlignment="Top" Width="101" FontSize="14" TextAlignment="Center"/>
+        <TextBox x:Name="Tvättid7_Copy1" HorizontalAlignment="Left" Height="48" Margin="418,238,0,0" TextWrapping="Wrap" Text="7:00 - 10:00" VerticalAlignment="Top" Width="101" FontSize="14" TextAlignment="Center"/>
+        <TextBox x:Name="Tvättid7_Copy2" HorizontalAlignment="Left" Height="48" Margin="418,304,0,0" TextWrapping="Wrap" Text="7:00 - 10:00" VerticalAlignment="Top" Width="101" FontSize="14" TextAlignment="Center"/>
+
+
 
     </Grid>
 </Window>

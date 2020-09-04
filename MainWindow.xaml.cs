@@ -24,5 +24,10 @@ namespace Sommarprojekt_2020
         {
             InitializeComponent();
         }
+
+        private void Calendar_DisplayModeChanged(object sender, CalendarModeChangedEventArgs e)
+        {
+
+        }
     }
 }
